@@ -10,8 +10,10 @@
 }
 
 .reviews__container {
+    background: url('../img/reviews_bg.png') center center/cover no-repeat;
     width: 1440px;
     margin: 0 auto;
+    font-family: 'Nunito', sans-serif;
     
     height: 700px;
     padding: 73px 165px 82px 165px;
