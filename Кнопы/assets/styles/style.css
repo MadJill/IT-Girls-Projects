@@ -1,0 +1,312 @@
+/* .socialmedia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 374px;
+    margin-right: 374px;
+}
+.contactme {
+    background-color: #1E1E1E;
+    display: flex;
+} */
+* {
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope';
+}
+body {
+    background: rgb(58, 63, 69);
+    overflow-x: hidden;
+}
+.header {
+    height: 63px;
+    margin-top: 23px;
+}
+
+.header__container {
+    width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.header__logo {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 45px;
+    letter-spacing: 0.31em;
+    font-variant: small-caps;
+    color: #FFFFFF;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+.header__links {
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+
+    align-items: center;
+}
+.header__link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+
+.social {
+    margin-top: 144px;
+    min-height: 1236px;
+}
+.social__container {
+    width: 713px;
+    margin: 0 auto;
+}
+.social__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    text-align: center;
+    letter-spacing: 0.17em;
+    color: #FFFFFF;
+}
+.social__buttons {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 921px;
+}
+
+.social__button {
+    width: 100%;
+    height: 97px;
+    background: #545A62;
+    border-radius: 24px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    color: #EFE6DD;
+    border: none;
+    cursor: pointer;
+}
+
+/* начало стилей меню */
+
+.header__burger {
+    z-index: 10000;
+    display: none;
+    width: 30px;
+    height: 26px;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.header__burger_active div:nth-of-type(1) {
+    transition: all 0.6s;
+    position: absolute;
+    top: 50%;
+    transform: rotate(45deg);
+}
+
+.header__burger_active div:nth-of-type(2) {
+    transition: all 0.6s;
+    position: absolute;
+    top: 50%;
+    transform: rotate(45deg);
+
+}
+
+.header__burger_active div:nth-of-type(3) {
+    transition: all 0.6s;
+    position: absolute;
+    top: 50%;
+
+    transform: rotate(-45deg);
+}
+
+.header__burger div {
+    z-index: -1000;
+    transition: all 0.6s;
+    height: 2px;
+    width: 100%;
+    background-color: white;
+}
+
+.header__smooth {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(256, 256, 256, 0.3);
+    transition: all 1.6s
+}
+
+.header__smooth_active {
+    display: block;
+    height: 100vh;
+    width: 100%;
+    transition: all 2s
+}
+
+.header__menu {
+    display: none;
+    position: absolute;
+    padding-top: 75px;
+    padding-left: 50px;
+    top: 0;
+    left: -500px;
+    width: 50%;
+    background-color: rgb(41, 40, 40);
+    z-index: 1000;
+    height: 100vh;
+    transition: all 0.3s;
+}
+
+.header__menu_active {
+    left: 0;
+}
+
+.header__menu__links {
+    display: flex;
+    flex-direction: column;
+
+}
+.header__menu__link {
+    margin-bottom: 50px;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;   
+}
+
+
+/* конец стилей меню */
+
+@media only screen and (max-width: 1440px){  
+    .header__container {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 1200px){  
+    
+    .header__logo {
+        font-size: 38px;
+    }
+    .header__links {
+        width: 250px;
+    }
+    .header__link {
+        font-size: 18px;
+    }
+    .social {
+        margin-top: 110px;
+        min-height: 1160px ;
+    }
+    .social__title {
+        font-size: 30px;
+    }
+    .social__container {
+        width: 581px;
+    }
+    .social__buttons {
+        min-height: 850px;
+    }
+    .social__button {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 992px){  
+
+    .header__logo {
+        font-size: 30px;
+    }
+    .header__links {
+        width: 185px;
+    }
+    .header__link {
+        font-size: 15px;
+    }
+    .social {
+        margin-top: 70px;
+        min-height: 1050px;
+    }
+    .social__title {
+        font-size: 25px;
+    }
+    .social__container {
+        width: 485px;
+    }
+    .social__buttons {
+        min-height: 790px;
+    }
+    .social__button {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 768px){  
+    .header__container {
+        overflow-y: hidden;
+    }
+    .header__burger {
+        display: flex;
+    }
+    .header__menu {
+        display: block;
+    }
+    .header__smooth {
+        display: block;
+    }
+    .header__logo {
+        font-size: 27px;
+        letter-spacing: 0.21em;
+    }
+    .header__links {
+        display: none;
+    }
+    .social__container {
+        width: 85%;
+        
+    }
+    .social {
+        min-height: 1020px;
+    }
+    .social__title {
+        font-size: 21px;
+    }
+    .social__button {
+        font-size: 21px;
+    }
+}
+
+@media only screen and (max-width: 480px){  
+    .header__logo {
+        font-size: 25px;
+        letter-spacing: 0;
+    }
+    .header__menu {
+        width: 70%;
+    }
+    .social {
+        margin-top: 45px;
+    }
+    .social__title {
+        font-size: 21px;
+    }
+    .social__button {
+        font-size: 21px;
+    }
+}
+
