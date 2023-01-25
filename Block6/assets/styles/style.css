@@ -1,3 +1,9 @@
+* {
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope';
+}
 body {
     background: rgb(58, 63, 69);
     overflow-x: hidden;
@@ -60,33 +66,4 @@ body {
     color: blue;
     margin-left: 374px;
     margin-right: 374px;
-}
-.btn {
-    color: #EFE6DD;
-    background-color: #545A62;
-}
-.btn:hover {
-    color: #EFE6DD;
-    background-color: #2A2F36;
-
-}
-.btn:active {
-    background-color: #23282E;
-    color: #EFE6DD;
-}
-.contacts {
-    margin-top: 80px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 921px;
-}
-.contacts:active {
-    background-color: #23282E;
-    color: #EFE6DD;
-}
-.contacts:hover {
-    color: #EFE6DD;
-    background-color: #2A2F36;
-
 }
