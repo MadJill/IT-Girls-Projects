@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Калькулятор</title>
+    <script src="assets/script/styles.js"></script>
+    <link rel="stylesheet" href="assets/styles/style.css">
+  </head>
+  <body>
+    <input type="button" value="+" onclick="showForm('+')">
+    <input type="button" value="-" onclick="showForm('-')">
+    <input type="button" value="*" onclick="showForm('*')">
+    <input type="button" value="/" onclick="showForm('/')">
+    
+    <div id="form" style="display:none">
+      <input type="number" id="num1" placeholder="Введите первое число">
+      <input type="number" id="num2" placeholder="Введите второе число">
+      <input type="button" value="Вычислить" onclick="calculate()">
+    </div>
+  </body>
+</html>
