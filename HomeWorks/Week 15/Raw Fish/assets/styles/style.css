@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(206, 206, 183);
+    font-family: Cambria, sans-serif;
+    font-size: large;
+  }
+  
+  button {
+    background-color: rgb(63, 63, 163);
+    font-size: large;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  input[type="text"] {
+    border-radius: 20px;
+    padding: 10px 20px;
+    border: none;
+    margin-right: 10px;
+  }
+  
+  #task-list {
+    margin-top: 20px;
+  }
+  
+  #no-tasks-msg {
+    color: rgb(127, 124, 124);
+  }
+  
