@@ -1,33 +1,66 @@
+/* общие стили */
 body {
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(206, 206, 183);
-    font-family: Cambria, sans-serif;
-    font-size: large;
-  }
-  
-  button {
-    background-color: rgb(63, 63, 163);
-    font-size: large;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    padding: 10px 20px;
-    cursor: pointer;
-  }
-  
-  input[type="text"] {
-    border-radius: 20px;
-    padding: 10px 20px;
-    border: none;
-    margin-right: 10px;
-  }
-  
-  #task-list {
-    margin-top: 20px;
-  }
-  
-  #no-tasks-msg {
-    color: rgb(127, 124, 124);
-  }
-  
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(220, 220, 203);
+  font-family: Cambria, sans-serif;
+  font-size: large;
+}
+
+button {
+  background-color: rgb(69, 69, 168);
+  font-size: large;
+  color: rgb(174, 171, 171);
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+input[type="text"] {
+  font-size: larger;
+  border-radius: 20px;
+  padding: 10px 20px;
+  border: none;
+  margin-right: 10px;
+}
+
+/* стили для списка задач */
+#task-list {
+  font-size: larger;
+  margin-top: 20px;
+}
+
+#no-tasks-msg {
+  color: rgb(127, 124, 124);
+}
+
+#tasks {
+  list-style-type: none;
+  padding: 0;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.task-item-checkbox {
+  margin-right: 10px;
+  transform: scale(2);
+}
+
+.task-item-text {
+  flex-grow: 1;
+}
+
+/* стили для кнопки очистки списка */
+#clear-tasks-btn {
+  margin-top: 10px;
+}
+
+label {
+  font-size: x-large;
+}
