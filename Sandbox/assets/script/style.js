@@ -172,3 +172,31 @@ let fruits2 = [];
 let salad = [`dragonfruit`,`avocado`,`pear`,`orange`,`mangostine`];
 let numbers = [5,17,27,158,95,83,379];
 console.log()
+
+
+//цикл while
+//Том Сойер
+let numBoards = 54;
+let boardsPainted = 0;
+
+while (boardsPainted < numBoards) {
+  console.log(`Том красит ${boardsPainted + 1}-ю доску`);
+  boardsPainted++;
+}
+
+console.log('Весь забор покрашен!');
+
+//10 000 hours
+let StudyHours = 0;
+let hoursToMaster = 10000;
+while (StudyHours<hoursToMaster) {
+    console.log (`я просидела за программированием и придумыванием цикло с понятными примерами ${StudyHours}`)
+    StudyHours+=100;// любое число часов
+}
+console.log (`Success!`)
+
+let i = 0;
+while (++i < 5) console.log(i);
+
+let x = 0;
+while (x++ < 5) console.log(x);

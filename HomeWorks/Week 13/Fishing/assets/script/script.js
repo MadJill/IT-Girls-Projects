@@ -15,8 +15,6 @@ const defaultAvatars = [
 
 function getRandomAvatar() {
   return defaultAvatars[Math.floor(Math.random() * defaultAvatars.length)];
-  
-  const name = nameInput.value.trim().replace(/\b\w/g, (letter) => letter.toUpperCase());
 }
 
 function checkSpam(str) {
@@ -26,7 +24,7 @@ function checkSpam(str) {
 form.addEventListener('submit', (event) => {
   event.preventDefault();
   
-  const name = nameInput.value.trim() || 'username';
+  const name = nameInput.value.trim().replace(/\b\w/g, (letter) => letter.toUpperCase());
   const avatar = avatarInput.value.trim() || getRandomAvatar();
   const message = checkSpam(messageInput.value.trim());
 

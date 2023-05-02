@@ -3,7 +3,7 @@ body {
   display: flex;
   flex-direction: column;
   background-color: rgb(220, 220, 198);
-  font-family: monospace;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: x-large;
   margin-top: 2%;
   margin-left: 2%;
