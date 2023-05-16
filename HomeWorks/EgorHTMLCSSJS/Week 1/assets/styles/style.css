@@ -1,0 +1,38 @@
+.container {
+    max-width: 920px;
+    width: 90%;
+    margin: 0 auto;
+}
+.box {
+    height: 73px;
+    border: 1px solid salmon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* top, left, right, botton*/
+/*static, relative, absolute*/
+.box_1 {
+    background-color: red;
+    }
+.box_2 {
+    background-color: rgb(255, 170, 0);
+    position: absolute;
+    width: 523px;
+    height: 523px;
+    left: 31px;  
+    }
+.box_3 {
+    background-color: green;
+    /*position: relative;
+    right: 113px;
+    top: 641px;
+    z-index: -1;
+    header, который ничего не должно  перекрывать имеет z-index -99*/
+    }
+.box_4 {
+background-color: blue;
+}
+.box_5 {
+    background-color: purple;
+    }
